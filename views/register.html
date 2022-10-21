@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang ="es">
+        <head>
+            <title>Registro de usuario</title>
+            <meta charset = "UTF-8">
+            <link href = "css/views.css" rel="stylesheet">
+            <link href = "css/register.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <link href = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css rel = "stylesheet">
+        </head>
+        <body>
+            <header>
+                    <span>
+                    <img class="logo" src = "/images/logo-mercado-liebre (1).svg" alt="logo Mercadoliebre"></span>
+                    <span><p class="barra-de-busqueda">
+                        <form>
+                            <input type="search">
+                        </form>
+                    </p></span>
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <div><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</div>   
+                    <nav>
+                            <span><a href="/Ofertas">Ofertas</a></span>
+                            <span><a href="/Tiendas Oficiales">Tiendas Oficiales</a></span>
+                            <span><a href="/Vender">Vender</a></span>
+                            <span><a href="/Ayuda">Ayuda</a></span>
+                            <span><a href="/register">Creá tu Cuenta<i class="fa-solid fa-id-card"></i></a></span>
+                            <span><a href="/login">Ingresá<i class="fa-solid fa-right-from-bracket"></i></a></span>
+                            <span><a href="/Mis Compras">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></span>
+                        <div class="burger-menu"><i class="fas fa-bars"></i></div>
+                    </nav>
+                    <div>
+                        <img class="banner" src="/images/img-home-banner.jpg" alt="Banner">
+                    </div>
+                </header>
+            <section>
+                <form class= "registro" action="/" method="get"> 
+                    <div class="elem-group"> 
+                        <input class="text" type="text" id="name" name="cliet_name&surname" placeholder="Nombre y Apellido" pattern=[A-Z\sa-z]{3,20} required> 
+                    </div> 
+                    <div class="elem-group"> 
+                        <input  class="text" type="text" id="username" name="cliet_username" placeholder="Nombre de usuario" pattern=[A-Z\sa-z]{3,20} required> 
+                    </div> 
+                    <div class="elem-group"> 
+                        <input  class="text" type="email" id="email" name="cliet_email" placeholder="Email" pattern=[A-Z\sa-z]{3,20} required> 
+                    </div> 
+                    <div class="elem-group">
+                        <h2><legend>Fecha de nacimiento</legend></h2>
+                        <input type ="date" name="fecha-nacimiento"></div>
+                    <div class="elem-group"> 
+                        <input class="text" type="text" id="address" name="address" placeholder="Domicilio" pattern=[A-Z\sa-z]{3,20} required> 
+                    </div> 
+                    <div class="elem-group"> 
+                        <h2><legend>Perfil del usuario</legend></h2>
+                            <div>
+                              <input type="radio" id="Comprador" name="Perfil del usuario" value="Comprador"
+                                     checked>
+                              <label for="Comprador">Comprador</label>
+                              <input type="radio" id="Vendedor" name="Perfil del usuario" value="Vendedor">
+                              <label for="Vendedor">Vendedor</label>
+                            </div>
+                    </div>
+                    <div class="elem-group">
+                         <h2><legend class="Intereses">Intereses</legend></h2>
+                             <div><input type="checkbox" id="cbox1" name= "Categoria de interes" value="electro">
+                             <label for="cbox1">Electro</label></div>
+                             <div><input type="checkbox" id="cbox2" name= "Categoria de interes" value="moda"> 
+                             <label for="cbox2">Moda</label></div>
+                             <div><input type="checkbox" id="cbox3"  name= "Categoria de interes"value="hogar"> 
+                             <label for="cbox3">Hogar</label></div>
+                             <div><input type="checkbox" id="cbox4"  name= "Categoria de interes"value="jugueteria"> 
+                             <label for="cbox4">Jugueteria</label></div>
+                             <div><input type="checkbox" id="cbox5" name= "Categoria de interes" value="vida-sana"> 
+                             <label for="cbox5">Vida sana</label></div>
+                    </div>
+                    <div class="elem-group">
+                        <h2><legend>Foto de usuario</legend></h2>
+                            <input type ="file" name="foto-usuario" accept="pdf, jpeg, jpg" multiple >
+                    </div>
+                    <div class="elem-group">
+                             <input class="text" type="password" id="pass" name="password" placeholder="Contraseña (minimo 8 caracteres)" minlength="8" required>
+                    </div>
+                     <div class="elem-group">
+                             <input class="text" type="password" id="pass" name="password" placeholder="Confirmar contraseña"minlength="8" required>
+                    </div>
+                     <button class="button" type="submit">Enviar</button>
+                    </form>
+            </section>
+        </body>

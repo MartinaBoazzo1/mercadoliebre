@@ -1,0 +1,27 @@
+section{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 3px;
+}
+.registro{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color: #0044AA;
+    color: white;
+    transition-property: background-color 1000ms;
+}
+button:hover{
+    background-color: #0022AA;
+}
+div.elem-group{
+    width: 100%;
+    height: 100%;
+    line-height: 10px;
+    margin: 5px;
+    padding: 2px;
+}
